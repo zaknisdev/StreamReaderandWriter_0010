@@ -27,4 +27,12 @@ int main() {
     infile.open("contohfile.txt");
 
     cout << endl << ">= Membuka dan membacca file " << endl;
+
+    if(infile.is_open())
+    {
+        while (getline(infile, baris))
+        {
+            cout << baris << '\n';
+        }
+    }
 }
