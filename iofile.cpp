@@ -21,4 +21,10 @@ int main() {
         outfile << baris << endl;
     }
     outfile.close();
+
+    ifstream infile;
+
+    infile.open("contohfile.txt");
+
+    cout << endl << ">= Membuka dan membacca file " << endl;
 }
